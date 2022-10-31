@@ -6,11 +6,21 @@ Você terá 3 variáveis. Sendo elas:
 3 - Distância em KM da viagem;
 
 */
+/*
+entradas a baixo
+*/
+const precoDoCombustivel = 4.88;
+const gastoDoCarroPorKm = 7;
+const distanciaPercorridaEmKm = 100;
 
-const combustivel = 4;
-const gasto = 7;
-const distancia = 120;
+/*
+calculo a baixo igual da aula
+*/
+const litrosConsumidos = distanciaPercorridaEmKm / gastoDoCarroPorKm;
+const valorGasto = litrosConsumidos * precoDoCombustivel;
+
 
 console.log('Olá, o valor da sua viagem é:');
-console.log(combustivel * gasto / distancia);
+console.log(valorGasto.toFixed(2));
+
 
