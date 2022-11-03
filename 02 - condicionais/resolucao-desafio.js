@@ -11,15 +11,19 @@ Você terá 5 variáveis. Sendo elas:
  Imprima no console o valor que será gasto para realizar esta viagem.
  */
 
- const precoEtanol = 4.08;
- const precoGasolina = 4.88;
- const tipoDeCombustivelNoCarro = precoEtanol;
+const precoEtanol = 4.08;
+const precoGasolina = 4.88;
+const tipoDeCombustivelNoCarro = 'Gasolina';
 
- const gastoMedioPorKm = 7;
- const distanciaEmKmDaViagem = 120;
+const gastoMedioPorKm = 7;
+const distanciaEmKmDaViagem = 120;
 
- const calculoNoEtanol = distanciaEmKmDaViagem / gastoMedioPorKm * precoEtanol;
- const calculoNaGasolina = distanciaEmKmDaViagem / gastoMedioPorKm * precoGasolina;
 
-console.log('O valor gasto na viagem usando Etanol é de R$',calculoNoEtanol.toFixed(2));
-console.log('mas se mudar e colocar Gasolina, vai ser de R$',calculoNaGasolina.toFixed(2))
+if (tipoDeCombustivelNoCarro === 'Etanol') {
+    const calculoNoEtanol = distanciaEmKmDaViagem / gastoMedioPorKm * precoEtanol;
+    console.log('O valor gasto na viagem usando Etanol é de R$', calculoNoEtanol.toFixed(2));
+
+} else {
+    const calculoNaGasolina = distanciaEmKmDaViagem / gastoMedioPorKm * precoGasolina;
+    console.log('mas se mudar e colocar Gasolina, vai ser de R$', calculoNaGasolina.toFixed(2));
+}
