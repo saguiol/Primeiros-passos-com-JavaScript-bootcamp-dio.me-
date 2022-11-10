@@ -29,6 +29,7 @@
   } else if (resultadoDoCalculo === 5) {
 
        console.log('E a sua classificação é: Recuperação!')  
+       
     } else if (resultadoDoCalculo <= 7) {
     
         console.log('E a sua classificação é: Recuperação!')
