@@ -10,33 +10,23 @@
   - Média acima de 7, passou de semestre.;
   */
 
-  const primeiraNota = 7;
-  const segundaNota = 9;
-  const terceiraNota = 6;
+const primeiraNota = 7;
+const segundaNota = 7;
+const terceiraNota = 8;
+const media = (primeiraNota + segundaNota + terceiraNota) / 3;
 
-  const calculoDaMedia = primeiraNota + segundaNota + terceiraNota;
-  const divisaoDoCalculo = 3;
-  const resultadoDoCalculo = calculoDaMedia / divisaoDoCalculo;
+console.log('A média das notas tiradas durante do semestre do Pedrinho é:', media.toFixed(2));
 
-  
+if (media < 5) {
 
-  console.log('A média das notas tiradas durante do semestre do Pedrinho é:', resultadoDoCalculo.toFixed(2));
+    console.log('E a sua classificação é: Reprovado!')
 
-  if (resultadoDoCalculo < 5) {
+} else if (media >= 5 && media <= 7) {
 
-       console.log('E a sua classificação é: Reprovado!')
+    console.log('E a sua classificação é: Recuperação!')
 
-  } else if (resultadoDoCalculo === 5) {
+} else {
 
-       console.log('E a sua classificação é: Recuperação!')  
-       
-    } else if (resultadoDoCalculo <= 7) {
-    
-        console.log('E a sua classificação é: Recuperação!')
-
-  } else {
-  
-    resultadoDoCalculo > 7 
     console.log('E a sua classificação é: Aprovado!')
 
-  }  
+}  
