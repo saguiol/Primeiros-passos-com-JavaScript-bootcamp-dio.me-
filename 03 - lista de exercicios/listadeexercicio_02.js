@@ -18,19 +18,20 @@
 
 const peso = 74;
 const altura = 1.75;
-const alturaAoQuadrado = altura * altura;
-const imc = peso / alturaAoQuadrado;
+const imc = peso / Math.pow(altura, 2);
+
+    console.log('Seu imc é:',imc.toFixed(2))
 
 if (imc < 18.5) {
-    console.log('De acordo com seu peso e altura o resultado do seu IMC é: Abaixo do Peso')
+    console.log('De acordo com o seu IMC a sua condição é: Abaixo do Peso')
 } else if (imc >= 18.5 && imc < 25) {
-    console.log('De acordo com seu peso e altura o resultado do seu IMC é: Peso normal')
+    console.log('De acordo com o seu IMC a sua condição é: Peso normal')
 } else if (imc >= 25 && imc < 30) {
-    console.log('De acordo com seu peso e altura o resultado do seu IMC é: Acima do Peso')
+    console.log('De acordo com o seu IMC a sua condição é: Acima do Peso')
 } else if (imc >= 30 && imc < 40) {
-    console.log('De acordo com seu peso e altura o resultado do seu IMC é: Obeso')
+    console.log('De acordo com o seu IMC a sua condição é: Obeso')
 } else if (imc >= 40) {
-    console.log('De acordo com seu peso e altura o resultado do seu IMC é: Obesidade Grave')
+    console.log('De acordo com o seu IMC a sua condição é: Obesidade Grave')
 }
 
 
